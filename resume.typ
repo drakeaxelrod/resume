@@ -1,4 +1,4 @@
-#import "template.typ": *;
+#import "templates/custom.typ": *;
 
 #show: init
 
