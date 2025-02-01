@@ -1,0 +1,219 @@
+{
+  "basics": {
+    "name": "Drake Axelrod",
+    "label": "Penetration Tester at QESTIT Sweden",
+    "image": "",
+    "email": "drakeaxelrod@gmail.com",
+    "phone": "+46 72-403-4462",
+    "url": "https://www.drakeaxelrod.com",
+    "summary": "Security Consultant specializing in offensive security, with a foundation in software engineering",
+    "location": {
+      "countryCode": "US",
+      "address": "Sweden"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "drakeaxelrod",
+        "url": "https://www.linkedin.com/in/drakeaxelrod/"
+      },
+      {
+        "network": "Github",
+        "username": "drakeaxelrod",
+        "url": "https://github.com/drakeaxelrod"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "QESTIT Malmö AB",
+      "endDate": "Present",
+      "highlights": [],
+      "position": "Penetration Tester",
+      "startDate": "July 2023",
+      "summary": "Specialized in assessing web applications, networks, IoT devices, and Active Directory security to identify and exploit vulnerabilities. Experienced in misconfiguration exploitation, privilege escalation, and bypassing defenses to simulate real-world threats. Proficient in tools such as Burp Suite, Metasploit, and custom exploit development. Conducted detailed security assessments and provided actionable remediation strategies to enhance overall security posture.",
+      "url": "https://www.linkedin.com/company/qestitsweden/"
+    },
+    {
+      "name": "QESTIT Malmö AB",
+      "endDate": "July 2023",
+      "highlights": [],
+      "position": "Penetration Testing Intern (Paid)",
+      "startDate": "Jan. 2023",
+      "summary": "Performed in-depth vulnerability assessments, exploit development, and security automation to identify and mitigate security risks. Executed simulated attacks and developed tailored security strategies to strengthen system defenses. Automated testing workflows to improve efficiency and streamlined the reporting process. Communicated findings effectively to both technical and non-technical stakeholders, supporting informed security decisions. Gained hands-on experience in addressing complex cybersecurity challenges in real-world environments.",
+      "url": "https://www.linkedin.com/company/qestitsweden/"
+    },
+    {
+      "name": "ADDQ 4 AB",
+      "endDate": "Dec. 2022",
+      "highlights": [],
+      "position": "Penetration Testing Intern",
+      "startDate": "Jan. 2021",
+      "summary": "Conducted security assessments to identify vulnerabilities in systems and applications, providing detailed reports with mitigation strategies. Gained hands-on experience in real-world cybersecurity challenges under the guidance of industry professionals. Assisted in enhancing digital resilience for clients by refining penetration testing methodologies and improving security measures.",
+      "url": "https://www.linkedin.com/company/addq-4-ab/"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Gothenburg",
+      "area": "Computer Software Engineering",
+      "studyType": "Bachelor of Science - BSc",
+      "startDate": "Aug. 2020",
+      "endDate": "June 2023",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "University of California, Santa Cruz",
+      "area": "Anthropology",
+      "studyType": "",
+      "startDate": "Dec. 2016",
+      "endDate": "Dec. 2017",
+      "score": "3",
+      "courses": []
+    },
+    {
+      "institution": "Santa Monica College",
+      "area": "Social and Behavioural Science",
+      "studyType": "Associate of Arts - AA",
+      "startDate": "Dec. 2011",
+      "endDate": "Dec. 2015",
+      "score": "Honors",
+      "courses": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certified Penetration Testing Specialist (CPTS)",
+      "date": "Jan. 2025",
+      "issuer": "Hack The Box",
+      "url": "https://academy.hackthebox.com/achievement/badge/ee14298d-de2e-11ef-864f-bea50ffe6cb4"
+    },
+    {
+      "name": "CyberOps Associate",
+      "date": "Aug. 2021",
+      "issuer": "Cisco",
+      "url": "https://www.credly.com/badges/5397f441-dc40-4885-8199-cf1f30f3fe59?source=linked_in_profile"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Research Paper Award",
+      "date": "Dec. 2024",
+      "awarder": "25th International Conference on Product-Focused Software Process Improvement",
+      "summary": "Awarded for the paper titled 'Guidelines for Supporting Software Engineers in Developing Secure Web Applications' presented at the conference."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Guidelines for Supporting Software Engineers in Developing Secure Web Applications",
+      "publisher": "Springer, Cham",
+      "releaseDate": "Nov. 27, 2024",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-78386-9_9#citeas",
+      "summary": "Bachelors Thesis on secure web application development presents a set of security guidelines to assist software engineers in mitigating threats. Developed through a design science research study, these guidelines are based on interviews with 10 industry practitioners and validated through a survey of 28 respondents."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Penetration Testing Tools",
+      "level": "",
+      "keywords": [
+        "BurpSuite",
+        "Metasploit",
+        "Wireshark",
+        "Nessus",
+        "Sliver",
+        "Nmap",
+        "...etc"
+
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": [
+        "ShellScript",
+        "PowerShell",
+        "C",
+        "C#",
+        "C++",
+        "Golang",
+        "Rust",
+        "Lua",
+        "Python",
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "R",
+        "PHP",
+        "Haskell",
+        "Nix",
+        "SQL",
+        "NoSQL",
+        "...etc"
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "level": "",
+      "keywords": [
+        "Windows",
+        "Linux",
+        "MacOS",
+        "Android",
+        "iOS",
+        "Debian",
+        "Archlinux",
+        "Kali Linux",
+        "Parrot OS"
+      ]
+    },
+    {
+      "name": "Frameworks, Paradigms, and Technologies",
+      "level": "",
+      "keywords": [
+        "MITRE ATT&CK",
+        "NIST Cybersecurity Framework",
+        "Penetration Testing Execution Standard (PTES)",
+        "OWASP",
+        "CVSS Scoring",
+        "Active Directory",
+        "Software Development Life Cycle",
+        "Docker",
+        "Git",
+        "Kubernetes",
+        "CI/CD",
+        "DevOps",
+        "Agile",
+        "Scrum",
+        "Vue",
+        "React",
+        "and more"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Native Speaker",
+      "language": "English"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "Swedish"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Activities",
+      "keywords": [
+        "Surfing",
+        "Hiking",
+        "Reading",
+        "Weightlifting",
+        "Gaming"
+      ]
+    }
+  ],
+  "references": []
+}
