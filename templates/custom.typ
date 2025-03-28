@@ -49,7 +49,7 @@
 
 #let section = (
   title: "TITLE",
-) => stack(spacing: 0.5em,
+) => stack(spacing: 0.25em,
   text(size: 1em, weight: 600, upper(title)),
   line(length: 100%)
 ) + v(-0.25em)
@@ -211,7 +211,7 @@ summary: "Description…"
 ) => {
   set stack(dir: ltr, spacing: 1fr)
   set text(weight: "regular", size: 0.8em)
-  text(emph(name) + " — " + keywords.join(", "))
+  text(strong(name) + " — " + keywords.join(", "))
 })
 
 #entry.insert("languages", (
