@@ -385,7 +385,7 @@
   school: "Santa Monica College",
   degree: "AA",
   major: "Social and Behavioral Sciences",
-  end: datetime(year: 2021, month: 6, day: 1),
+  end: datetime(year: 2015, month: 12, day: 1),
 )
 
 
