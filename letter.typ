@@ -1,5 +1,4 @@
 #import "templates/letter.typ": init;
-#let data = json("data.json")
 
 #show: doc => init(
   sender: (

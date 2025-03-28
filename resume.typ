@@ -340,6 +340,12 @@
 
 #list(
   resume.certification(
+    title: "Multi-Cloud Red Teaming Analyst (MCRTA)",
+    issuer: "CyberWarfare Labs",
+    date: datetime(year: 2025, month: 3, day: 1),
+    url: "https://labs.cyberwarfare.live/badge/certificate/67e2a648ad91a572aafe5777"
+  ),
+  resume.certification(
     title: "Certified Penetration Testing Specialist (CPTS)",
     issuer: "Hack The Box",
     date: datetime(year: 2025, month: 1, day: 1),
@@ -350,12 +356,6 @@
     issuer: "Cisco",
     date: datetime(year: 2021, month: 8, day: 1),
     url: "https://www.credly.com/badges/5397f441-dc40-4885-8199-cf1f30f3fe59?source=linked_in_profile",
-  ),
-  resume.certification(
-    title: "Multi-Cloud Red Teaming Analyst (MCRTA)",
-    issuer: "CyberWarfare Labs",
-    date: datetime(year: 2025, month: 3, day: 1),
-    url: "https://labs.cyberwarfare.live/badge/certificate/67e2a648ad91a572aafe5777"
   ),
 )
 
