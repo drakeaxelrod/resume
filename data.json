@@ -38,7 +38,7 @@
       "name": "QESTIT Malmö AB",
       "endDate": "July 2023",
       "highlights": [],
-      "position": "Penetration Testing Intern (Paid)",
+      "position": "Junior Penetration Tester",
       "startDate": "Jan. 2023",
       "summary": "Performed in-depth vulnerability assessments, exploit development, and security automation to identify and mitigate security risks. Executed simulated attacks and developed tailored security strategies to strengthen system defenses. Automated testing workflows to improve efficiency and streamlined the reporting process. Communicated findings effectively to both technical and non-technical stakeholders, supporting informed security decisions. Gained hands-on experience in addressing complex cybersecurity challenges in real-world environments.",
       "url": "https://www.linkedin.com/company/qestitsweden/"
@@ -95,6 +95,12 @@
       "date": "Aug. 2021",
       "issuer": "Cisco",
       "url": "https://www.credly.com/badges/5397f441-dc40-4885-8199-cf1f30f3fe59?source=linked_in_profile"
+    },
+    {
+      "name": "Multi-Cloud Red Teaming Analyst (MCRTA)",
+      "date": "Mar. 2025",
+      "issuer": "CyberWarfare Labs",
+      "url": "https://labs.cyberwarfare.live/badge/certificate/67e2a648ad91a572aafe5777"
     }
   ],
   "awards": [
