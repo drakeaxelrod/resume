@@ -284,7 +284,7 @@
 #resume.section-header("experience")
 
 #resume.job(
-  title: "Offensive Security Architect Consultant",
+  title: "Offensive Security Engineer Consultant",
   company: "QESTIT Malmö AB",
   location: (
     city: "Malmö",
