@@ -284,7 +284,7 @@
 #resume.section-header("experience")
 
 #resume.job(
-  title: "Penetration Tester",
+  title: "Offensive Security Architect Consultant",
   company: "QESTIT Malmö AB",
   location: (
     city: "Malmö",
