@@ -131,7 +131,7 @@
   doc
 ) => {
   set text(size: 11pt, font: ("Calibri", "Carlito"))
-  set par(leading: 0.5em)
+  set par(leading: 0.25em)
   set page(
     margin: (
       top: 0.5in,
