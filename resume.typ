@@ -366,6 +366,12 @@
   K. Svensson, D. Axelrod, M. Mohamad, and R. Wohlrab, "Guidelines for Supporting Software Engineers in Developing Secure Web Applications," in Product-Focused Software Process Improvement, D. Pfahl, J. Gonzalez Huerta, J. Klünder, and H. Anwar, Eds., Cham: Springer Nature Switzerland, 2025, pp. 123-138. #link("https://doi.org/10.1007/978-3-031-78386-9_9", "doi:10.1007/978-3-031-78386-9_9")
 ]
 
+#[ // Raffaela Groner, Klara Svensson, Drake Axelrod, Ranim Khojah, Mazen Mohamad, Rebekka Wohlrab
+  R. Groner, K. Svensson, D. Axelrod, R. Khojah, M. Mohamad, and R. Wohlrab, "Empowering Software Engineers to Design More Secure Web Applications: Guidelines and Potential of Using LLMs as a Recommender Tool," Journal of Software: Evolution and Process, 2026. #link("https://doi.org/10.1002/smr.70083", "doi:10.1002/smr.70083")
+]
+
+
+
 #resume.section-header("awards")
 
 #resume.award(
