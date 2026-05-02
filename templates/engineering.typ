@@ -89,6 +89,53 @@
   v(-0.5em)
 }
 
+#let company-header = (
+  company: "Company Name",
+  location: (city: "City", state: "State"),
+  start: datetime(year: 2020, month: 1, day: 1),
+  end: datetime(year: 2021, month: 1, day: 1),
+  url: "https://www.company.com"
+) => {
+  if type(end) != str { end = end.display("[month repr:short] [year]") }
+  if type(start) != str { start = start.display("[month repr:short] [year]") }
+  v(-0.5em)
+  table(
+    columns: (1fr, auto),
+    align: (left, right),
+    stroke: none,
+    inset: (x: 0em),
+    gutter: 0em,
+    link(url, [*#(company)* – #(location.city), #(location.state)]),
+    [#start – #end],
+  )
+  v(-0.75em)
+}
+
+#let role = (
+  title: "Software Engineer",
+  start: datetime(year: 2020, month: 1, day: 1),
+  end: datetime(year: 2021, month: 1, day: 1),
+  summary: list("bullet"),
+) => {
+  if type(end) != str { end = end.display("[month repr:short] [year]") }
+  if type(start) != str { start = start.display("[month repr:short] [year]") }
+  v(-0.5em)
+  table(
+    columns: (1fr, auto),
+    align: (left, right),
+    stroke: none,
+    inset: (x: 0em),
+    gutter: 0em,
+    [_#(title)_],
+    [#start – #end],
+    table.cell(colspan: 2, {
+      v(-0.5em)
+      summary
+    })
+  )
+  v(-0.75em)
+}
+
 #let education = (
   school: "School",
   degree: "Degree",
