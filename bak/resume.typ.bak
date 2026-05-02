@@ -157,7 +157,7 @@
 
 #resume.section-header("summary")
 
-Offensive Security Consultant with 5+ years in penetration testing across web, API, network, Active Directory, IoT, and cloud (AWS, Azure, GCP) environments. Led 40+ client engagements, built the firm's automated reporting framework, and mentored junior consultants. Co-author of peer-reviewed research on secure web application development; recipient of the PROFES 2024 Best Research Paper Award.
+Offensive Security Engineer with 5+ years in penetration testing across web, API, network, Active Directory, IoT, and cloud (AWS, Azure, GCP) environments. Led 40+ client engagements, built the firm's automated reporting framework, and mentored junior consultants. Co-author of peer-reviewed research on secure web application development; recipient of the PROFES 2024 Best Research Paper Award.
 
 #resume.section-header("skills")
 
@@ -275,57 +275,69 @@ Offensive Security Consultant with 5+ years in penetration testing across web, A
     "CAPEC",
   )
 )
-// #resume.skill-group(
-//   title: "Soft Skills & Communication",
-//   skills: (
-//     "Technical Report Writing",
-//     "Stakeholder Presentations",
-//     "Collaboration",
-//     "Security Training"
-//   )
-// )
+#resume.skill-group(
+  title: "Soft Skills & Communication",
+  skills: (
+    "Technical Report Writing",
+    "Stakeholder Presentations",
+    "Collaboration",
+    "Security Training"
+  )
+)
 
 #resume.section-header("experience")
 
-#resume.company-header(
-  company: "QESTIT Cybersecurity AB (formerly ADDQ 4 AB)",
+#resume.job(
+  title: "Offensive Security Engineer Consultant",
+  company: "QESTIT Cybersecurity AB",
+  location: (
+    city: "Malmö",
+    state: "Skåne"
+  ),
+  start: datetime(year: 2023, month: 7, day: 1),
+  end: "Present",
+  summary: list(
+    "Led security assessments for clients, identifying vulnerabilities and providing actionable remediation strategies.",
+    "Performed assessments on multiple platforms including web applications, APIs, networks, IoT devices, Active Directory, and cloud environments.",
+    "Identified and exploited misconfigurations, privilege escalation opportunities, and bypassed defenses to simulate real-world threats.",
+    "Developed custom exploits and tools to enhance assessment capabilities.",
+    "Trained and mentored junior team members in penetration testing methodologies, tools, and best practices.",
+  ),
+  url: "https://www.linkedin.com/company/qestitsweden/"
+)
+#resume.job(
+  title: "Junior Penetration Tester",
+  company: "QESTIT Malmö AB",
+  location: (
+    city: "Malmö",
+    state: "Skåne"
+  ),
+  start: datetime(year: 2023, month: 1, day: 1),
+  end: datetime(year: 2023, month: 7, day: 1),
+  summary: list(
+    "Performed in-depth vulnerability assessments by simulating real-world attacks to identify and mitigate security risks.",
+    "Conducted exploit development and security automation to enhance the efficiency of security assessments.",
+    "Automated the assessment reporting process, improving efficiency and accuracy.",
+    "Communicated findings effectively to both technical and non-technical stakeholders, supporting informed security decisions.",
+  ),
+  url: "https://www.linkedin.com/company/qestitsweden/"
+)
+
+#resume.job(
+  title: "Penetration Testing Intern",
+  company: "ADDQ 4 AB",
   location: (
     city: "Malmö",
     state: "Skåne"
   ),
   start: datetime(year: 2021, month: 1, day: 1),
-  end: "Present",
-  url: "https://www.linkedin.com/company/qestitsweden/"
-)
-#resume.role(
-  title: "Offensive Security Consultant",
-  start: datetime(year: 2023, month: 7, day: 1),
-  end: "Present",
-  summary: list(
-    "Led 40+ penetration tests across web applications, APIs, networks, Active Directory, IoT, and cloud environments (AWS, Azure, GCP), delivering prioritized findings and actionable remediation guidance.",
-    "Designed and built the firm's automated report generation framework, standardizing deliverable quality and cutting manual report assembly time across the consulting team.",
-    "Developed custom exploits, tooling, and tradecraft to bypass defensive controls and simulate realistic attacker behavior during red team and assumed-breach engagements.",
-    "Mentored and trained junior consultants in penetration testing methodology, tooling, and reporting practices.",
-  ),
-)
-#resume.role(
-  title: "Junior Penetration Tester",
-  start: datetime(year: 2023, month: 1, day: 1),
-  end: datetime(year: 2023, month: 7, day: 1),
-  summary: list(
-    "Conducted vulnerability assessments and penetration tests, simulating real-world attack chains to identify and prioritize security risks.",
-    "Authored exploit scripts and security automation that improved engagement efficiency and seeded the foundation for the firm's reporting framework.",
-    "Communicated findings to both technical and executive stakeholders, supporting informed remediation decisions.",
-  ),
-)
-#resume.role(
-  title: "Penetration Testing Intern",
-  start: datetime(year: 2021, month: 1, day: 1),
   end: datetime(year: 2022, month: 12, day: 1),
   summary: list(
-    "Trained in penetration testing methodology, tooling, and engagement workflow under senior consultants while completing BSc, contributing to client vulnerability assessments and security audits.",
-    "Conducted BSc thesis research on guidelines for secure web application development in collaboration with company mentors and University of Gothenburg, leading to peer-reviewed publication (PROFES 2024).",
+    "Gained hands-on experience in real-world cybersecurity challenges under the guidance of industry professionals.",
+    "Assisted with vulnerability assessments, penetration testing, and security audits.",
+    "Collaborated with cross-functional teams to ensure security best practices were integrated into development processes.",
   ),
+  url: "https://www.linkedin.com/company/addq-4-ab/"
 )
 
 #resume.section-header("certificates")
