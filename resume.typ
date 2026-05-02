@@ -149,7 +149,7 @@
 #show: resume.init
 #resume.basic-information(
   name: "Drake Axelrod",
-  email: "drakeaxelrod@gmail.com",
+  email: "drake.axelrod@pm.me",
   website: "drakeaxelrod.com",
   linkedin: "linkedin.com/in/drakeaxelrod",
   github: "github.com/drakeaxelrod"
