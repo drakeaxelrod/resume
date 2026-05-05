@@ -16,15 +16,10 @@ jobs:
       - name: Setup Typst
         uses: typst-community/setup-typst@v4
 
-      - name: Install fonts
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq fonts-crosextra-carlito
-
       - name: Build PDF and SVG
         run: |
-          typst compile resume.typ resume.pdf
-          typst compile --pages 1 resume.typ resume.svg
+          typst compile --font-path fonts resume.typ resume.pdf
+          typst compile --font-path fonts --pages 1 resume.typ resume.svg
 
       - name: Deploy to build branch
         run: |
