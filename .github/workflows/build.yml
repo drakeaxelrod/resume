@@ -1,0 +1,34 @@
+name: Build Resume
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
+
+      - name: Build PDF and SVG
+        run: |
+          mkdir -p out
+          typst compile resume.typ out/resume.pdf
+          typst compile --pages 1 resume.typ out/resume.svg
+
+      - name: Commit built artifacts
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add out/
+          git diff --cached --quiet || git commit -m "build: update compiled resume artifacts"
+          git push

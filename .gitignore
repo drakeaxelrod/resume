@@ -1,3 +1,21 @@
-letters
-tmp
+# Build artifacts
+out/
+result
+
+# Nix
 .direnv
+
+# Temp
+tmp/
+letters/
+
+# Sensitive source material
+history.md
+
+# Editor / OS
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/
+.idea/
