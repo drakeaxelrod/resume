@@ -1,391 +1,171 @@
+// resume.typ — Drake Axelrod
 
+#import "template.typ" as t
 
-/*
-  IN PROGRESS
+#show: t.init
 
-  -> Reference Material
-  https://old.reddit.com/r/EngineeringResumes/wiki/index
-  https://www.overleaf.com/project/662939053eb1dc8f0f3c617f
+// ═══════════════════════════════════════════════════════════════════════════
+// HEADER
+// ═══════════════════════════════════════════════════════════════════════════
 
-  -> Ordering
-
-  - Summary
-  - Experience
-  - Certificates
-  - Education
-*/
-
-// #set text(size: 11pt, font: ("Calibri", "Carlito"))
-// #set par(leading: 0.5em)
-// #set page(
-//   margin: (
-//     top: 0.5in,
-//     bottom: 0.5in,
-//     left: 0.5in,
-//     right: 0.5in
-//   )
-// )
-
-// #let capitalize = (s) => upper(s.at(0)) + lower(s.slice(1))
-
-// #let basic-information = (
-//   name: "John Doe",
-//   email: "name@gmail.com",
-//   website: "portfolio.com",
-//   linkedin: "linkedin.com/in/name",
-//   github: "github.com/name"
-// ) => {
-//   set align(center)
-//   set text(size: 24pt)
-//   text(name)
-//   set text(size: 11pt)
-//   linebreak()
-//   let urls = (
-//     link("mailto:" + email, email),
-//     link(website, website.replace(regex("https?://"), "")),
-//     link(linkedin, linkedin.replace(regex("https?://"), "")),
-//     link(github, github.replace(regex("https?://"), ""))
-//   )
-//   urls.join(" | ")
-//   v(-2em)
-// }
-
-// #let section-header = (title) => {
-//   set text(size: 12.5pt)
-//   text(capitalize(title))
-//   v(-0.75em)
-//   line(length: 100%)
-//   v(-0.75em)
-// }
-
-// #let skill-group = (
-//   title: "CAD",
-//   skills: (
-//     "AutoCAD",
-//     "SolidWorks",
-//     "Fusion 360",
-//     "Onshape",
-//     "FreeCAD"
-//   )
-// ) => {
-//   strong(title + ": ") + skills.join(", ") + linebreak()
-// }
-
-// #let job = (
-//   title: "Software Engineer",
-//   company: "Company Name",
-//   location: (
-//     city: "City",
-//     state: "State"
-//   ),
-//   start: datetime(year: 2020, month: 1, day: 1),
-//   end: datetime(year: 2021, month: 1, day: 1),
-//   summary: list(
-//     [#strong("STAR:") #strong("S")ituation, #strong("T")ask, #strong("A")ction, #strong("R")esult],
-//     [#strong("XYZ:") Accomplished #strong("[X]") as measured by #strong("[Y]") by doing #strong("[Z]")],
-//     [#strong("CAR:") #strong("C")hallenge, #strong("A")ction, #strong("R")esult],
-//   ),
-//   url: "https://www.company.com"
-// ) => {
-//   if type(end) != str { end = end.display("[month repr:short] [year]") }
-//   if type(start) != str { start = start.display("[month repr:short] [year]") }
-//   v(-0.5em)
-//   table(
-//     columns: (1fr, auto),
-//     align: (left, right),
-//     stroke: none,
-//     inset: (x: 0em),
-//     gutter: 0em,
-//     link(url, [*#(title),* #(company) – #(location.city), #(location.state)]),
-//     [#start – #end],
-//     table.cell(colspan: 2, {
-//       v(-0.25em)
-//       summary
-//     })
-//   )
-//   v(-0.5em)
-// }
-
-// #let education = (
-//   school: "School",
-//   degree: "Degree",
-//   major: "Major",
-//   end: datetime(year: 2024, month: 1, day: 1),
-// ) => {
-//   grid(
-//     columns: (1fr, auto),
-//     align: (left, right),
-//     stroke: none,
-//     inset: (x: 0em),
-//     gutter: 0em,
-//     strong(school) + " – " + degree + " in " + major,
-//     end.display("[month repr:short] [year]")
-//   )
-//   v(-0.5em)
-// }
-
-// #let certification = (
-//   title: "Certified Information Systems Security Professional (CISSP)",
-//   issuer: "ISC2",
-//   date: datetime(year: 2024, month: 1, day: 1),
-//   url: "https://www.isc2.org/Certifications/CISSP",
-// ) => {
-//   link(
-//     url,
-//     strong(title) + " | " + issuer + " | " + date.display("[month repr:short] [year]")
-//   )
-// }
-
-// #let award = (
-//   title: "Best Research Paper Award",
-//   date: datetime(year: 2024, month: 12, day: 1),
-//   awarder: "PROFES 2024 – 25th International Conference on Product-Focused Software Process Improvement",
-// ) => {
-//   strong(title) + " | " + awarder + " | " + date.display("[month repr:short] [year]")
-// }
-
-#import "templates/engineering.typ" as resume
-
-#show: resume.init
-#resume.basic-information(
+#t.header(
   name: "Drake Axelrod",
   email: "drake.axelrod@pm.me",
-  website: "drakeaxelrod.com",
-  linkedin: "linkedin.com/in/drakeaxelrod",
-  github: "github.com/drakeaxelrod"
+  website: "https://drakeaxelrod.com",
+  linkedin: "https://linkedin.com/in/drakeaxelrod",
+  github: "https://github.com/drakeaxelrod",
 )
 
-#resume.section-header("summary")
+// ═══════════════════════════════════════════════════════════════════════════
+// SUMMARY
+// ═══════════════════════════════════════════════════════════════════════════
 
-Offensive Security Consultant with 5+ years in penetration testing across web, API, network, Active Directory, IoT, and cloud (AWS, Azure, GCP) environments. Led 40+ client engagements, built the firm's automated reporting framework, and mentored junior consultants. Co-author of peer-reviewed research on secure web application development; recipient of the PROFES 2024 Best Research Paper Award.
+#t.section("Summary")
 
-#resume.section-header("skills")
+Offensive Security Consultant with 53 engagements across 12 industry sectors. Focused on web, API, mobile, Active Directory, cloud, and IoT attack surfaces. Co-author of 2 peer-reviewed security publications (Best Research Paper, PROFES 2024).
 
-#resume.skill-group(
-  title: "Penetration Testing & Security Assessment",
-  skills: (
-    "Web Applications",
-    "APIs",
-    "Network Security",
-    "Active Directory",
-    "IoT",
-    "Cloud Security (AWS, Azure, GCP)"
-  )
-)
-#resume.skill-group(
-  title: "Exploitation & Post-Exploitation",
-  skills: (
-    "Privilege Escalation",
-    "Credential Dumping",
-    "Lateral Movement",
-    "Defense Evasion",
-    "Red Teaming",
-    "Command & Control (C2)",
-  )
-)
-// #resume.skill-group(
-//   title: "Vulnerability Assessment & Management",
-//   skills: (
-//     "Vulnerability Scanning",
-//     "Risk Assessment",
-//     "Threat Modeling",
-//     "Security Auditing",
-//     "Incident Response",
-//     "Security Operations Center (SOC)",
-//     "Security Information and Event Management (SIEM)",
-//     "Security Orchestration, Automation, and Response (SOAR)",
-//     "Security Incident and Event Management (SIEM)",
-//     "Security Operations Center (SOC)",
-//   )
-// )
-#resume.skill-group(
-  title: "Operating Systems",
-  skills: (
-    "Linux (Arch, Kali, Parrot, NixOS, Debian, Alpine)",
-    "Windows",
-    "OSX",
-    "Android",
-    "iOS",
-  )
-)
-#resume.skill-group(
-  title: "Tools & Frameworks",
-  skills: (
-    "BurpSuite",
-    "Metasploit",
-    "Sliver",
-    "Nmap",
-    "Wireshark",
-    "Nessus",
-    "Impacket",
-    "BloodHound",
-    "Responder",
-  )
-)
-#resume.skill-group(
-  title: "Scripting & Development",
-  skills: (
-    "ShellScript",
-    "PowerShell",
-    "Python",
-    "C",
-    "C++",
-    "Lua",
-    "Java",
-    "Rust",
-    "Go",
-    "JavaScript",
-    "TypeScript",
-    "SQL",
-    "NoSQL",
-    "Haskell",
-    "Nix",
-    "Exploit Development",
-    "Reverse Engineering",
-    "Docker",
-    "Kubernetes",
-    "CI/CD",
-    "DevOps",
-    "Git",
-    "Scrum",
-    "Agile",
-  )
-)
-#resume.skill-group(
-  title: "Endpoint Security & Management",
-  skills: (
-    "Intune Company Portal",
-    "Endpoint Detection and Response (EDR)",
-    "Identity and Access Management (IAM)",
-  )
-)
-#resume.skill-group(
-  title: "Security Standards & Compliance",
-  skills: (
-    "OWASP",
-    "MITRE ATT&CK",
-    "NIST Cybersecurity Framework",
-    // "CIS Benchmarks",
-    // "PCI DSS",
-    // "ISO 27001",
-    // "NIST 800-53",
-    "CVSS",
-    "CVE",
-    "CWE",
-    "CAPEC",
-  )
-)
-// #resume.skill-group(
-//   title: "Soft Skills & Communication",
-//   skills: (
-//     "Technical Report Writing",
-//     "Stakeholder Presentations",
-//     "Collaboration",
-//     "Security Training"
-//   )
-// )
+// ═══════════════════════════════════════════════════════════════════════════
+// SKILLS — before Experience so ATS/recruiters hit keywords early
+// ═══════════════════════════════════════════════════════════════════════════
 
-#resume.section-header("experience")
+#t.section("Skills")
 
-#resume.company-header(
-  company: "QESTIT Cybersecurity AB (formerly ADDQ 4 AB)",
-  location: (
-    city: "Malmö",
-    state: "Skåne"
+#t.skills(
+  title: "Security Tools",
+  items: (
+    "Burp Suite", "Metasploit", "Sliver", "BloodHound", "Impacket",
+    "Mimikatz", "Frida", "MobSF", "Nmap", "Nessus", "Hashcat", "Wireshark",
   ),
+)
+#t.skills(
+  title: "Platforms",
+  items: (
+    "AWS", "Azure / Entra ID", "Active Directory", "OAuth/OIDC", "SAML",
+    "Docker", "Kubernetes", "Linux", "Windows", "iOS", "Android",
+  ),
+)
+#t.skills(
+  title: "Programming",
+  items: (
+    "Python", "Bash", "PowerShell", "Go", "Rust", "C", "C++", "TypeScript",
+    "JavaScript", "Lua", "Nix", "SQL", "Haskell", "Java", "C#",
+  ),
+)
+#t.skills(
+  title: "Methodologies",
+  items: (
+    "OWASP (WSTG, ASVS, MASVS, MASTG, Top 10)", "MITRE ATT&CK", "PTES",
+    "NIST SP 800-115", "CVSS", "CWE", "PCI DSS", "GDPR",
+  ),
+)
+
+// ═══════════════════════════════════════════════════════════════════════════
+// EXPERIENCE
+// ═══════════════════════════════════════════════════════════════════════════
+
+#t.section("Experience")
+
+#t.company(
+  name: "QESTIT Cybersecurity AB",
+  location: "Malmö, Sweden",
+  url: "https://www.linkedin.com/company/qestitsweden/",
   start: datetime(year: 2021, month: 1, day: 1),
   end: "Present",
-  url: "https://www.linkedin.com/company/qestitsweden/"
 )
-#resume.role(
+
+#t.role(
   title: "Offensive Security Consultant",
   start: datetime(year: 2023, month: 7, day: 1),
   end: "Present",
-  summary: list(
-    "Led 40+ penetration tests across web applications, APIs, networks, Active Directory, IoT, and cloud environments (AWS, Azure, GCP), delivering prioritized findings and actionable remediation guidance.",
-    "Designed and built the firm's automated report generation framework, standardizing deliverable quality and cutting manual report assembly time across the consulting team.",
-    "Developed custom exploits, tooling, and tradecraft to bypass defensive controls and simulate realistic attacker behavior during red team and assumed-breach engagements.",
-    "Mentored and trained junior consultants in penetration testing methodology, tooling, and reporting practices.",
+  bullets: (
+    [Found critical vulnerabilities across 40+ engagements: RCE paths, EDR bypass via BYOVD, Metasploit-WinRM chains, LSA credential dumps, and Kerberoastable accounts in enterprise AD, cloud, and web environments.],
+    [Handled IR on an Akira ransomware intrusion. Rebuilt the attack timeline, traced lateral movement and C2 traffic across AD/SMB/Windows, and confirmed containment.],
+    [Wrote custom Frida hooks, exploit scripts, and C2 payloads that bypassed EDR, certificate pinning, Play Integrity attestation, and anti-tampering controls on red team engagements.],
+    [Built the firm's automated report generation framework in Typst, replacing manual assembly and standardizing deliverables across the team.],
+    [Tested mobile apps (iOS/Android) on medical devices and hospitality platforms with MobSF, Frida/Objection, and Magisk-rooted rigs. Found clinical data in memory, extractable keys, and missing cert pinning.],
+    [Ran internal AD assessments for insurance, energy, and manufacturing clients using LLMNR/NBT-NS poisoning, NTLM relay, GPO abuse, and MDM bypass to demonstrate lateral-movement paths.],
   ),
 )
-#resume.role(
+
+#t.role(
   title: "Junior Penetration Tester",
   start: datetime(year: 2023, month: 1, day: 1),
   end: datetime(year: 2023, month: 7, day: 1),
-  summary: list(
-    "Conducted vulnerability assessments and penetration tests, simulating real-world attack chains to identify and prioritize security risks.",
-    "Authored exploit scripts and security automation that improved engagement efficiency and seeded the foundation for the firm's reporting framework.",
-    "Communicated findings to both technical and executive stakeholders, supporting informed remediation decisions.",
+  bullets: (
+    [Ran web app, API, and network pentests following PTES and OWASP. Wrote up findings for both engineers and execs so remediation actually happened.],
+    [Built exploit scripts and automation tooling that sped up engagements and became the foundation for the firm's reporting framework.],
   ),
 )
-#resume.role(
+
+#t.role(
   title: "Penetration Testing Intern",
   start: datetime(year: 2021, month: 1, day: 1),
   end: datetime(year: 2022, month: 12, day: 1),
-  summary: list(
-    "Trained in penetration testing methodology, tooling, and engagement workflow under senior consultants while completing BSc, contributing to client vulnerability assessments and security audits.",
-    "Conducted BSc thesis research on guidelines for secure web application development in collaboration with company mentors and University of Gothenburg, leading to peer-reviewed publication (PROFES 2024).",
+  bullets: (
+    [Learned pentesting methodology from senior consultants while finishing BSc, contributing to live client assessments.],
+    [Wrote BSc thesis on secure web development with University of Gothenburg; published at PROFES 2024 (Best Paper).],
   ),
 )
 
-#resume.section-header("certificates")
+// ═══════════════════════════════════════════════════════════════════════════
+// CERTIFICATIONS
+// ═══════════════════════════════════════════════════════════════════════════
 
-#list(
-  resume.certification(
-    title: "Multi-Cloud Red Teaming Analyst (MCRTA)",
-    issuer: "CyberWarfare Labs",
-    date: datetime(year: 2025, month: 3, day: 1),
-    url: "https://labs.cyberwarfare.live/badge/certificate/67e2a648ad91a572aafe5777"
-  ),
-  resume.certification(
-    title: "Certified Penetration Testing Specialist (CPTS)",
-    issuer: "Hack The Box",
-    date: datetime(year: 2025, month: 1, day: 1),
-    url: "https://academy.hackthebox.com/achievement/badge/ee14298d-de2e-11ef-864f-bea50ffe6cb4"
-  ),
-  resume.certification(
-    title: "CyberOps Associate",
-    issuer: "Cisco",
-    date: datetime(year: 2021, month: 8, day: 1),
-    url: "https://www.credly.com/badges/5397f441-dc40-4885-8199-cf1f30f3fe59?source=linked_in_profile",
-  ),
+#t.section("Certifications")
+
+#t.cert(
+  title: "Multi-Cloud Red Teaming Analyst (MCRTA)",
+  issuer: "CyberWarfare Labs",
+  date: datetime(year: 2025, month: 3, day: 1),
+  url: "https://labs.cyberwarfare.live/badge/certificate/67e2a648ad91a572aafe5777",
+)
+#linebreak()
+#t.cert(
+  title: "Certified Penetration Testing Specialist (CPTS)",
+  issuer: "Hack The Box",
+  date: datetime(year: 2025, month: 1, day: 1),
+  url: "https://academy.hackthebox.com/achievement/badge/ee14298d-de2e-11ef-864f-bea50ffe6cb4",
+)
+#linebreak()
+#t.cert(
+  title: "CyberOps Associate",
+  issuer: "Cisco",
+  date: datetime(year: 2021, month: 8, day: 1),
+  url: "https://www.credly.com/badges/5397f441-dc40-4885-8199-cf1f30f3fe59",
 )
 
+// ═══════════════════════════════════════════════════════════════════════════
+// PUBLICATIONS & AWARDS
+// ═══════════════════════════════════════════════════════════════════════════
 
-#resume.section-header("publications")
+#t.section("Publications & Awards")
 
-#[
-  K. Svensson, D. Axelrod, M. Mohamad, and R. Wohlrab, "Guidelines for Supporting Software Engineers in Developing Secure Web Applications," in Product-Focused Software Process Improvement, D. Pfahl, J. Gonzalez Huerta, J. Klünder, and H. Anwar, Eds., Cham: Springer Nature Switzerland, 2025, pp. 123-138. #link("https://doi.org/10.1007/978-3-031-78386-9_9", "doi:10.1007/978-3-031-78386-9_9")
-]
+K. Svensson, D. Axelrod _et al._, "Guidelines for Supporting Software Engineers in Developing Secure Web Applications," _PROFES 2024_, Springer, 2025. *Best Research Paper Award.* #link("https://doi.org/10.1007/978-3-031-78386-9_9", "doi:10.1007/978-3-031-78386-9_9") \
+R. Groner, K. Svensson, D. Axelrod _et al._, "Empowering Software Engineers to Design More Secure Web Applications," _J. Software: Evolution and Process_, 2026. #link("https://doi.org/10.1002/smr.70083", "doi:10.1002/smr.70083")
 
-#[ // Raffaela Groner, Klara Svensson, Drake Axelrod, Ranim Khojah, Mazen Mohamad, Rebekka Wohlrab
-  R. Groner, K. Svensson, D. Axelrod, R. Khojah, M. Mohamad, and R. Wohlrab, "Empowering Software Engineers to Design More Secure Web Applications: Guidelines and Potential of Using LLMs as a Recommender Tool," Journal of Software: Evolution and Process, 2026. #link("https://doi.org/10.1002/smr.70083", "doi:10.1002/smr.70083")
-]
+// ═══════════════════════════════════════════════════════════════════════════
+// EDUCATION
+// ═══════════════════════════════════════════════════════════════════════════
 
+#t.section("Education")
 
-
-#resume.section-header("awards")
-
-#resume.award(
-  title: "Best Research Paper Award",
-  date: datetime(year: 2024, month: 12, day: 1),
-  awarder: "PROFES 2024 – 25th International Conference on Product-Focused Software Process Improvement",
-)
-
-#resume.section-header("education")
-#resume.education(
+#t.education(
   school: "University of Gothenburg",
   degree: "BSc",
   major: "Software Engineering",
-  end: datetime(year: 2023, month: 6, day: 1),
+  date: datetime(year: 2023, month: 6, day: 1),
 )
-#resume.education(
+#t.education(
   school: "Santa Monica College",
   degree: "AA",
   major: "Social and Behavioral Sciences",
-  end: datetime(year: 2015, month: 12, day: 1),
+  date: datetime(year: 2015, month: 12, day: 1),
 )
 
+// ═══════════════════════════════════════════════════════════════════════════
+// LANGUAGES
+// ═══════════════════════════════════════════════════════════════════════════
 
+#t.section("Languages")
 
-
+*English* (native) #h(1em) *Swedish* (fluent)
