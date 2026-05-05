@@ -18,6 +18,11 @@ jobs:
       - name: Setup Typst
         uses: typst-community/setup-typst@v4
 
+      - name: Install fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-crosextra-carlito
+
       - name: Build PDF and SVG
         run: |
           mkdir -p out
