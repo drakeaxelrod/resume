@@ -23,19 +23,19 @@ jobs:
 
       - name: Build PDF and SVG
         run: |
-          mkdir -p out
-          typst compile resume.typ out/resume.pdf
-          typst compile --pages 1 resume.typ out/resume.svg
+          typst compile resume.typ resume.pdf
+          typst compile --pages 1 resume.typ resume.svg
 
       - name: Deploy to build branch
         run: |
+          cp resume.pdf /tmp/resume.pdf
+          cp resume.svg /tmp/resume.svg
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout --orphan build
           git rm -rf .
-          mkdir -p out
-          git checkout main -- out/
-          mv out/* .
+          cp /tmp/resume.pdf resume.pdf
+          cp /tmp/resume.svg resume.svg
           git add resume.pdf resume.svg
           git commit -m "build: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push -f origin build
