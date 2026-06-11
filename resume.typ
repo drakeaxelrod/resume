@@ -11,7 +11,7 @@
 #t.header(
   name: "Drake Axelrod",
   email: "drake.axelrod@pm.me",
-  website: "https://drakeaxelrod.com",
+  website: "https://drakeaxelrod.dev",
   linkedin: "https://linkedin.com/in/drakeaxelrod",
   github: "https://github.com/drakeaxelrod",
 )
