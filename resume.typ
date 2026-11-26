@@ -78,6 +78,7 @@ Offensive Security Consultant with 53 engagements across 12 industry sectors. Fo
   start: datetime(year: 2023, month: 7, day: 1),
   end: "Present",
   bullets: (
+    [Led client assessments from scoping to debrief and mentored junior testers in methodology and tooling.],
     [Found critical vulnerabilities across 40+ engagements: RCE paths, EDR bypass via BYOVD, Metasploit-WinRM chains, LSA credential dumps, and Kerberoastable accounts in enterprise AD, cloud, and web environments.],
     [Handled IR on an Akira ransomware intrusion. Rebuilt the attack timeline, traced lateral movement and C2 traffic across AD/SMB/Windows, and confirmed containment.],
     [Wrote custom Frida hooks, exploit scripts, and C2 payloads that bypassed EDR, certificate pinning, Play Integrity attestation, and anti-tampering controls on red team engagements.],
@@ -92,13 +93,13 @@ Offensive Security Consultant with 53 engagements across 12 industry sectors. Fo
   start: datetime(year: 2023, month: 1, day: 1),
   end: datetime(year: 2023, month: 7, day: 1),
   bullets: (
-    [Ran web app, API, and network pentests following PTES and OWASP. Wrote up findings for both engineers and execs so remediation actually happened.],
+    [Ran web app, API, and network pentests following PTES and OWASP, with findings written for engineers and executives.],
     [Built exploit scripts and automation tooling that sped up engagements and became the foundation for the firm's reporting framework.],
   ),
 )
 
 #t.role(
-  title: "Penetration Testing Intern",
+  title: "Penetration Testing Intern, ADDQ (now QESTIT)",
   start: datetime(year: 2021, month: 1, day: 1),
   end: datetime(year: 2022, month: 12, day: 1),
   bullets: (
