@@ -33,14 +33,14 @@ Offensive Security Consultant with 53 engagements across 12 industry sectors. Fo
 #t.skills(
   title: "Security Tools",
   items: (
-    "Burp Suite", "Metasploit", "Sliver", "BloodHound", "Impacket",
-    "Mimikatz", "Frida", "MobSF", "Nmap", "Nessus", "Hashcat", "Wireshark",
+    "Burp Suite", "Metasploit", "Sliver", "BloodHound", "Impacket", "NetExec",
+    "Mimikatz", "Frida", "MobSF", "Nmap", "Nessus", "Wireshark",
   ),
 )
 #t.skills(
   title: "Platforms",
   items: (
-    "AWS", "Azure / Entra ID", "Active Directory", "OAuth/OIDC", "SAML",
+    "AWS", "Azure / Entra ID", "GCP", "Active Directory", "OAuth/OIDC", "SAML",
     "Docker", "Kubernetes", "Linux", "Windows", "iOS", "Android",
   ),
 )
